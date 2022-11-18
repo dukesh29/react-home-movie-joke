@@ -12,9 +12,9 @@ class MovieList extends Component<{}, State> {
 
   state: State = {
     myMovies: [
-      {title: 'В погоне за счастьем', id: '1', num: 1},
-      {title: 'Властелин колец', id: '2', num: 2},
-      {title: 'Мстители:Финал', id: '3', num: 3},
+      {title: 'В погоне за счастьем', id: '1'},
+      {title: 'Властелин колец', id: '2'},
+      {title: 'Мстители:Финал', id: '3'},
     ],
 
     myValue: '',
@@ -29,7 +29,6 @@ class MovieList extends Component<{}, State> {
       return this.setState(prevState => ({
         myMovies: [...prevState.myMovies, {
           id: Math.random().toString(),
-          num: prevState.myMovies.length + 1,
           title: prevState.myValue,
         }]
       }))
@@ -68,7 +67,7 @@ class MovieList extends Component<{}, State> {
           <p>To watch list:</p>
         </div>
         {this.state.myMovies.map(movie => (
-          <MovieCart id={movie.id} onDelete={() => this.deleteEl(movie.id)} title={movie.title} num={movie.num}
+          <MovieCart id={movie.id} onDelete={() => this.deleteEl(movie.id)} title={movie.title}
                      onChange={event => this.changeInput(event, movie.id)} key={movie.id}/>
         ))}
       </>

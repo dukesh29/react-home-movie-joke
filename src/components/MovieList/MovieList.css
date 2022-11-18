@@ -1,8 +1,10 @@
-
 .movieList {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .input-block{
@@ -24,14 +26,3 @@
     gap: 5px;
 }
 
-button {
-    background: dodgerblue;
-    color: white;
-    border: none;
-    border-radius: 10px;
-}
-
-button:hover{
-    background: black;
-    color: white;
-}

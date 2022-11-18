@@ -1,0 +1,37 @@
+
+.movieList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-block p{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.input-form {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    background: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    background: black;
+    color: white;
+}
